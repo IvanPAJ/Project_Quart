@@ -1,0 +1,22 @@
+[project]
+name = "project-quart"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "IvanPAJ",email = "ivan.junior@rhsolut.com.br"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "quart (>=0.20.0,<0.21.0)",
+    "quart-jwt-extended (>=0.1.0,<0.2.0)"
+]
+
+[tool.poetry]
+package-mode = false
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.8"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
